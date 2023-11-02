@@ -33,6 +33,67 @@ body{
     background-color: #282929;
 }
 
+ul{
+    list-style: none;
+    margin-top: 20px;
+    padding-bottom: 10px;
+}
+li{
+    padding-top: 12px;
+    font-size: 16px;
+}
+
+
+/*sidebar*/
+
+#container-sidebar{
+    padding: 20px;
+    display: flex;
+    flex-direction: column;
+    color: grey;
+    justify-content: space-between;
+    align-items: flex-start;
+    height: 100%;
+}
+
+#logo-big{
+    width: 150px;
+    margin-bottom: 20px;
+}
+
+.option{
+    font-size: 20px;
+    margin-bottom: 10px;
+}
+
+.selected{
+    color: white;
+}
+
+.fa-square-plus{
+    font-size: 40px;
+    vertical-align: middle;
+}
+
+#download{
+    padding-bottom: 10px;
+    border-bottom: 1px solid gray;
+    margin-bottom: 20px;
+
+}
+
+#profile-pic{
+    width: 30px;
+    height: 30px;
+    background-color: grey;
+    background-image: url(img/profile.svg);
+    background-position: center;
+    border-radius: 50%;
+    display: inline-block;
+    vertical-align: middle;
+}
+
+
 /*controller*/
 
 #controller-container{
