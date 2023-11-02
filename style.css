@@ -1,0 +1,35 @@
+/*configurazione macrostruttura*/
+
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+body{
+    scroll-behavior: smooth;
+    font-family: 'Montserrat', sans-serif;
+    font-size: 20px;
+}
+
+#wrapper-up{
+    height: calc(100vh - 100px);
+    display: flex;
+}
+
+#sidebar{
+    width: 250px;
+    height: 100%;
+    background-color:black ;
+}
+
+#main-content{
+    flex-grow: 1;
+    background-color: #151822;
+}
+
+#controller{
+    height: 100px;
+    background-color: #282929;
+}
+
