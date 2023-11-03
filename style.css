@@ -150,6 +150,7 @@ p{
     justify-content: center;
     align-items: flex-start;
     width: 100%;
+    flex-wrap: wrap;
     
 }
 
@@ -173,15 +174,15 @@ p{
 #first-row{
     display: flex;
     align-items: flex-start;
-    width: 100%;
+    flex-wrap: wrap;
+    justify-content: flex-start;
 }
 
 .card{
-    width:calc(100% /6 );
+    width:calc(100% /6 - 20px);
     margin: 10px;
     display: flex;
     flex-direction: column;
-    align-items: center;
     text-align: center;
 }
 
@@ -236,7 +237,7 @@ p{
 }
 
 .longer{
-    width: 400px;
+    max-width: 200px;
     margin: 20px;
 }
 
@@ -282,16 +283,40 @@ p{
 
   /*m view*/
 
-  @media all and (max-width:1150px){
+  @media all and (max-width:878px){
 
     
     .card{
-        width:100%;
-        margin: 10px;
-        display: flex;
-        flex-direction: column;
-        align-items: center;
-        text-align: center;
+        width:calc(100% / 4 - 20px);
+    
+    }
+
+}
+
+
+/*s view*/
+
+@media all and (max-width:639px){
+
+    .card{
+        width:calc(100% / 2 - 20px);
+    }
+
+}
+
+
+/*xs view*/
+
+@media all and (max-width:552px){
+
+    #sidebar{
+        min-width: 75px;
+        height: 100%;
+        background-color:black ;
+    }
+
+    .hide-xs{
+        display: none;
     }
 
 }
