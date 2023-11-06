@@ -67,7 +67,6 @@ p{
     display: flex;
     flex-direction: column;
     color: grey;
-    justify-content: space-between;
     align-items: flex-start;
     height: 100%;
 }
@@ -109,6 +108,13 @@ p{
     vertical-align: middle;
 }
 
+#overflow{
+   overflow-y: auto;
+}
+
+#bottom-sidebar-items{
+    margin-top: auto;
+}
 /*shadow bar*/
 
 #shadow-bar{
@@ -232,6 +238,7 @@ p{
     flex-direction: column;
     color: white;
     align-items: center;
+    width: calc(100% / 3);
 }
 
 #upper-panel{
@@ -242,11 +249,13 @@ p{
 
 .longer{
     margin: 10px;  
+    width: 100%;
 }
 
 #bottom-panel{
     font-size:12px;
     display: flex;
+    width: 100%;
 }
 
 
@@ -256,7 +265,7 @@ p{
     color: white;
     display: flex;
     align-items: center;
-    height: 100%;  
+    height: 100%; 
 }
 
 .volume-item{
@@ -344,7 +353,13 @@ p{
         gap: 20px;
     }
 
-   
+   #overflow{
+    display: none;
+   }
+
+   #track-cover{
+    display: none;
+   }
 
 }
 
@@ -374,6 +389,13 @@ li:hover{
     cursor: pointer;
 }
 
+.slider::-webkit-slider-thumb:hover {
+    background: #acff2e;
+}
+
+.button:hover{
+    font-size: 16px;
+}
 
 /*hover sulle cover degli album*/
 
